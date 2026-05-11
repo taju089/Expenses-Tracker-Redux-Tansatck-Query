@@ -40,6 +40,12 @@ https://github.com/taju089/Expenses-Tracker-Redux-Tansatck-Query
 ### Frontend
 
 ```bash
-cd client
+cd frontend
 npm install
 npm run dev
+
+### Backend
+```bash
+cd backend
+npm install
+node --watch app
