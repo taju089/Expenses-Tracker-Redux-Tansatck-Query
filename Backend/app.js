@@ -12,7 +12,7 @@ const cors = require('cors')
 
 mongoose
   .connect(
-    "mongodb+srv://sktaju089_e-commerce:taju089@cluster0.ljs2bl9.mongodb.net/expenses?appName=Cluster0/",
+    "your db string",
   )
   .then(() => {
     return console.log("DB is connected successfully");
