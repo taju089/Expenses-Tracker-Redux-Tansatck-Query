@@ -70,7 +70,7 @@ Expense-Tracker/
 └── README.md
 ⚙️ Installation
 Clone Repository
-git clone https://github.com/your-username/Expenses-Tracker-Redux-Tansatck-Query.git
+git clone https://github.com/taju089/Expenses-Tracker-Redux-Tansatck-Query
 Frontend Setup
 cd frontend
 npm install
