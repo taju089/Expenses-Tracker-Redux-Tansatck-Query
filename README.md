@@ -1,10 +1,13 @@
-Expense Tracker – MERN Stack Application
+💰 Expense Tracker – MERN Stack Application
 
 A full-stack Expense Tracker application built using React.js (Vite) for the frontend and Node.js + Express.js for the backend.
-The application helps users manage income and expense transactions with secure JWT authentication, category management, and transaction tracking.
+This application helps users manage their income and expenses with secure authentication, category management, and transaction tracking.
+
+🔗 GitHub Repository:
+Expenses-Tracker-Redux-Tansatck-Query
 
 🚀 Features
-🔐 Authentication
+🔐 Authentication & Authorization
 User Signup
 User Login
 JWT Authentication
@@ -15,8 +18,8 @@ Get User Profile Details
 📂 Category Management
 Create Categories
 Update Categories
-List Categories
-Category Types:
+Fetch Categories List
+Separate Category Types:
 Income
 Expense
 💰 Transaction Management
@@ -25,13 +28,14 @@ Update Transactions
 Delete Transactions
 List Transactions
 Transactions linked with categories
-⚡ Frontend Features
+⚡ Frontend Functionalities
 Built using React.js with Vite
-TanStack Query (useQuery, useMutation) for API handling
-Centralized Redux store for user state management
+TanStack Query for API handling
+API caching and mutation handling
+Centralized Redux store for user management
 Protected Routing
 Reusable Components
-API Error Handling
+Error Handling
 Responsive UI
 🛠️ Tech Stack
 Frontend
@@ -41,50 +45,53 @@ Redux Toolkit
 TanStack Query
 React Router DOM
 Axios
+CSS
 Backend
 Node.js
 Express.js
 MongoDB
 Mongoose
-JWT Authentication
+JWT
 bcrypt.js
 📁 Project Structure
-Expense-Tracker/
+Expenses-Tracker-Redux-Tansatck-Query/
 │
-├── frontend/
+├── client/
 │   ├── src/
 │   ├── components/
 │   ├── pages/
 │   ├── redux/
+│   ├── routes/
 │   ├── services/
-│   └── routes/
+│   └── utils/
 │
-├── backend/
+├── server/
 │   ├── controllers/
+│   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── middleware/
 │   ├── config/
 │   └── utils/
 │
+├── package.json
 └── README.md
-⚙️ Installation
-Clone Repository
-git clone https://github.com/taju089/Expenses-Tracker-Redux-Tansatck-Query
-Frontend Setup
-cd frontend
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/taju089/Expenses-Tracker-Redux-Tansatck-Query.git
+2️⃣ Frontend Setup
+cd client
 npm install
 npm run dev
-Backend Setup
-cd backend
+3️⃣ Backend Setup
+cd server
 npm install
 npm start
 🔑 Environment Variables
 
-Create a .env file inside backend folder.
+Create a .env file inside the server folder.
 
 PORT=5000
-MONGO_URI=your_mongodb_connection
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 📡 API Modules
 Authentication APIs
@@ -102,3 +109,58 @@ Create Transaction
 Update Transaction
 Delete Transaction
 Get Transactions
+🔄 TanStack Query Usage
+
+Implemented complete API handling using:
+
+useQuery
+useMutation
+
+Features achieved using TanStack Query:
+
+API Caching
+Refetching
+Optimistic Updates
+Loading States
+Error Handling
+🧠 Redux State Management
+
+Redux Toolkit is used for:
+
+User Authentication State
+Storing User Details
+Global State Management
+🔒 Protected Routes
+
+Protected routes are implemented to restrict unauthorized users from accessing:
+
+Dashboard
+Transactions
+Categories
+Profile Pages
+📸 Screenshots
+
+Add your application screenshots inside a screenshots folder.
+
+Example:
+
+![Login](./screenshots/login.png)
+![Dashboard](./screenshots/dashboard.png)
+![Transactions](./screenshots/transactions.png)
+🚀 Future Improvements
+Dashboard Analytics
+Expense Charts & Graphs
+Monthly Reports
+Export Transactions
+Dark Mode
+Pagination & Filters
+Income vs Expense Statistics
+👨‍💻 Author
+Shaik Taju
+GitHub:
+taju089 GitHub Profile
+LinkedIn:
+Add your LinkedIn profile link here
+⭐ Support
+
+If you found this project useful, give it a ⭐ on GitHub.
